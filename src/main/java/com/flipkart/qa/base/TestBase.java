@@ -14,11 +14,13 @@ import com.flipkart.qa.util.TestUtil;
 
 public class TestBase {
 
+	// This is base class
 	public static WebDriver driver;
 	public static Properties prop;
 
 	public TestBase() {
 		try {
+			// Read property file here
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(System.getProperty("H:\\Final_Selenium\\Prafull_Selenuim\\Flipkart_Demo\\Demo\\src\\main\\java\\com\\flipkart\\qa\\config\\config.properties"));
 			prop.load(ip);
